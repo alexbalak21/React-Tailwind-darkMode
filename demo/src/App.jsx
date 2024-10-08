@@ -5,10 +5,12 @@ import DarkCard from "./components/DarkCard"
 import ThemeButton from "./components/ThemeButton"
 
 function App() {
+  const systemDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
   // Check localStorage for theme preference, default to false (light mode)
   const [darkMode, setDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("darkMode")
-    return savedTheme ? JSON.parse(savedTheme) : false
+    //IF NO THEME IS STORED IN STORAGE USES SYSTEM PREFERENCE IF ANY
+    return savedTheme ? JSON.parse(savedTheme) : systemDarkMode
   })
 
   useEffect(() => {
