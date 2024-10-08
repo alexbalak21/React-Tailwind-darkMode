@@ -1,7 +1,19 @@
-import React from "react"
+import React, {useState} from "react"
+import Navbar from "./components/Navbar"
+import Card from "./components/Card"
+import DarkCard from "./components/DarkCard"
+import ThemeButton from "./components/ThemeButton"
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  const [darkMode, setDarkMode] = useState(false)
+  return (
+    <>
+      <ThemeButton darkModeActive darkMode={darkMode} setDarkMode={setDarkMode} />
+      <main className="w-full h-screen flex justify-center items-center bg-bodyBackgroundColor">
+        <Card />
+      </main>
+    </>
+  )
 }
 
 export default App

@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --body-background-color: 255, 255, 255;
+  --card-background-color: 255, 255, 255; /* bg-white */
+  --card-border-color: 229, 231, 235; /* border-gray-200 */
+  --card-title-color: 0, 0, 0;
+  --card-text-color: 55, 65, 81; /* text-gray-700 */
+  --card-button-background: 29, 78, 216; /* bg-blue-700 */
+  --card-button-hover-background: 30, 64, 175; /* hover:bg-blue-800 */
+  --card-focus-ring: 147, 197, 253; /* focus:ring-blue-300 */
+  --button-text-color: 255, 255, 255;
+}
+
+.dark {
+  --body-background-color: 17, 24, 39;
+  --card-background-color: 31, 41, 55; /* bg-gray-800 */
+  --card-border-color: 31, 41, 55;
+  --card-title-color: 255, 255, 255; /* text-white */
+  --card-text-color: 156, 163, 175; /* text-gray-400 */
+  --card-button-background: 37, 99, 235; /* bg-blue-600 */
+  --card-button-hover-background: 29, 78, 216; /* hover:bg-blue-700 */
+  --card-focus-ring: 30, 58, 138; /* focus:ring-blue-800 */
+  --button-text-color: 255, 255, 255;
+}
