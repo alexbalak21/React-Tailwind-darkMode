@@ -2,11 +2,11 @@ import React from "react"
 
 function Card() {
   return (
-    <div className="max-w-sm p-6 bg-foregroundBgColor border border-cardBorderColor rounded-lg shadow">
+    <div className="max-w-sm p-6 bg-foregroundBgColor border border-borderColor rounded-lg shadow">
       <a href="#">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-cardTitleColor">Noteworthy technology acquisitions 2021</h5>
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-titleColor">Noteworthy technology acquisitions 2021</h5>
       </a>
-      <p className="mb-3 font-normal text-cardTextColor">
+      <p className="mb-3 font-normal text-textColor">
         Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
       </p>
       <a
