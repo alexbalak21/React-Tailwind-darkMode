@@ -2,7 +2,7 @@ import React from "react"
 
 function Card() {
   return (
-    <div class="max-w-sm p-6 bg-cardBackgroundColor border border-cardBorderColor rounded-lg shadow">
+    <div class="max-w-sm p-6 bg-foregroundBgColor border border-cardBorderColor rounded-lg shadow">
       <a href="#">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-cardTitleColor">Noteworthy technology acquisitions 2021</h5>
       </a>
